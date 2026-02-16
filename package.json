@@ -1,10 +1,13 @@
 {
   "name": "steam-oauth",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A library for Steam OpenID authentication",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "repository": {
     "type": "git",
