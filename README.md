@@ -45,9 +45,7 @@ console.log(authURL); // Outputs the generated authentication URL
 After the user has authenticated, you will receive a response containing parameters. You can verify these parameters using the verify method:
 
 ```typescript
-const params = {
-  // Include the parameters received from Steam
-};
+const params = req.query
 
 steamOAuth.verify(params).then((result) => {
   if (result) {
@@ -86,4 +84,5 @@ Verifies the OpenID response from Steam.
 ## License
 
 This project is licensed under the MIT License.
+
 
